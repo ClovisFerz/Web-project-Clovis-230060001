@@ -1,80 +1,254 @@
-[21:31, 25/05/2026] Clovis: dine
-[21:31, 25/05/2026] Carlos tugas: <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Solution</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICON -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body bgcolor="#f0f8ff">
 
-    <center>
-        <h1 style="color: darkblue;">AI Solution</h1>
-        <h3>Jasa Pembuatan Program AI Sederhana</h3>
-    </center>
+<body>
 
-    <hr>
+    <!-- HEADER -->
 
-    <h2>Tentang Kami</h2>
-    <p>
-        Kami menyediakan jasa pembuatan program Artificial Intelligence (AI)
-        sederhana untuk pelajar, mahasiswa, dan kebutuhan usaha kecil.
-    </p>
+    <header>
 
-    <h2>Layanan</h2>
-    <ul>
-        <li>Chatbot AI Sederhana</li>
-        <li>Program Prediksi Data</li>
-        <li>Website AI Dasar</li>
-        <li>Program AI Python</li>
-    </ul>
+        <div class="logo">
+            <h1>AI Solution</h1>
+        </div>
 
-    <h2>Harga</h2>
+        <nav>
+            <a href="#tentang">Tentang</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#harga">Harga</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
 
-    <table border="1" cellpadding="10">
-        <tr bgcolor="lightblue">
-            <th>Layanan</th>
-            <th>Harga</th>
-        </tr>
+    </header>
 
-        <tr>
-            <td>Chatbot AI</td>
-            <td>Rp150.000</td>
-        </tr>
+    <!-- HERO -->
 
-        <tr>
-            <td>Prediksi Data</td>
-            <td>Rp200.000</td>
-        </tr>
+    <section class="hero">
 
-        <tr>
-            <td>Website AI</td>
-            <td>Rp300.000</td>
-        </tr>
-    </table>
+        <div class="hero-content">
 
-    <h2>Form Pemesanan</h2>
+            <h2>Jasa Pembuatan Program AI Modern</h2>
 
-    <form>
-        <label>Nama:</label><br>
-        <input type="text"><br><br>
+            <p>
+                Solusi pembuatan chatbot, website AI, machine learning,
+                dan berbagai project Artificial Intelligence sederhana
+                untuk pelajar, mahasiswa, maupun bisnis.
+            </p>
 
-        <label>Email:</label><br>
-        <input type="email"><br><br>
+            <a href="#kontak" class="btn">
+                Pesan Sekarang
+            </a>
 
-        <label>Jenis Program:</label><br>
-        <select>
-            <option>Chatbot AI</option>
-            <option>Prediksi Data</option>
-            <option>Website AI</option>
-        </select><br><br>
+        </div>
 
-        <label>Pesan:</label><br>
-        <textarea rows="5" cols="40"></textarea><br><br>
+    </section>
 
-        <input type="submit" value="Kirim">
-    </form>
+    <!-- TENTANG -->
 
+    <section class="section" id="tentang">
 
+        <div class="section-title">
+            <h2>Tentang Kami</h2>
+        </div>
+
+        <div class="card">
+
+            <p>
+                AI Solution adalah layanan pembuatan program Artificial Intelligence
+                dengan tampilan modern, pengerjaan cepat, dan harga terjangkau.
+                Kami membantu membuat project AI sederhana menggunakan HTML,
+                Python, JavaScript, dan teknologi modern lainnya.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- LAYANAN -->
+
+    <section class="section" id="layanan">
+
+        <div class="section-title">
+            <h2>Layanan Kami</h2>
+        </div>
+
+        <div class="services">
+
+            <div class="service-box">
+
+                <i class="fa-solid fa-robot"></i>
+
+                <h3>Chatbot AI</h3>
+
+                <p>
+                    Chatbot otomatis untuk website dan pelayanan pelanggan.
+                </p>
+
+            </div>
+
+            <div class="service-box">
+
+                <i class="fa-solid fa-brain"></i>
+
+                <h3>Machine Learning</h3>
+
+                <p>
+                    Program prediksi data dan analisis sederhana.
+                </p>
+
+            </div>
+
+            <div class="service-box">
+
+                <i class="fa-solid fa-globe"></i>
+
+                <h3>Website AI</h3>
+
+                <p>
+                    Website modern dengan fitur AI interaktif.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- HARGA -->
+
+    <section class="section" id="harga">
+
+        <div class="section-title">
+            <h2>Daftar Harga</h2>
+        </div>
+
+        <div class="table-container">
+
+            <table>
+
+                <tr>
+                    <th>Layanan</th>
+                    <th>Fitur</th>
+                    <th>Harga</th>
+                </tr>
+
+                <tr>
+                    <td>Chatbot AI</td>
+                    <td>Chatbot Website Sederhana</td>
+                    <td>Rp150.000</td>
+                </tr>
+
+                <tr>
+                    <td>Machine Learning</td>
+                    <td>Prediksi Data Python</td>
+                    <td>Rp250.000</td>
+                </tr>
+
+                <tr>
+                    <td>Website AI</td>
+                    <td>Website AI Modern</td>
+                    <td>Rp500.000</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <!-- FORM -->
+
+    <section class="section" id="kontak">
+
+        <div class="section-title">
+            <h2>Form Pemesanan</h2>
+        </div>
+
+        <div class="form-container">
+
+            <form>
+
+                <div class="input-box">
+
+                    <label>Nama Lengkap</label>
+
+                    <input type="text" placeholder="Masukkan nama">
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Email</label>
+
+                    <input type="email" placeholder="Masukkan email">
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Jenis Program</label>
+
+                    <select>
+                        <option>Chatbot AI</option>
+                        <option>Machine Learning</option>
+                        <option>Website AI</option>
+                    </select>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Pesan</label>
+
+                    <textarea rows="5"
+                        placeholder="Masukkan detail project"></textarea>
+
+                </div>
+
+                <input type="submit" value="Kirim Pesanan" class="btn-submit">
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>AI Solution</h3>
+
+        <p>
+            Jasa Pembuatan Program Artificial Intelligence Modern
+        </p>
+
+        <div class="social">
+
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-github"></i>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 AI Solution. All Rights Reserved.
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
