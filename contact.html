@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Clovis AI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <aside>
+        <div class="brand">🚀 Clovis<span>AI</span></div>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="services.html">Jasa Layanan</a>
+            <a href="portfolio.html">Produk Kami</a>
+            <a href="about.html">Tentang Kami</a>
+            <a href="contact.html" class="active">Hubungi Kami</a>
+        </nav>
+    </aside>
+
+    <div class="main-wrapper">
+        <header>
+            <div class="header-title">Mulai Proyek Baru</div>
+            <div class="header-actions">
+                <a href="login.html" class="btn-login">Log In</a>
+            </div>
+        </header>
+
+        <main>
+            <div class="form-card">
+                <h2 style="margin-bottom: 24px;">Detail Kebutuhan Proyek</h2>
+                <form action="#" method="post">
+                    
+                    <div class="form-group">
+                        <label for="perusahaan">Nama Perusahaan / Instansi</label>
+                        <input type="text" id="perusahaan" name="perusahaan" placeholder="Masukkan nama entitas Anda">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Bisnis</label>
+                        <input type="email" id="email" name="email" placeholder="contoh@domain.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Fokus Layanan AI</label>
+                        <div class="radio-group">
+                            <input type="radio" id="fokus1" name="fokus" value="vision">
+                            <label for="fokus1">Computer Vision</label>
+                            <input type="radio" id="fokus2" name="fokus" value="data">
+                            <label for="fokus2">Analisis Data</label>
+                            <input type="radio" id="fokus3" name="fokus" value="web">
+                            <label for="fokus3">Integrasi Web</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tanggal">Target Mulai Pengembangan</label>
+                        <input type="date" id="tanggal" name="tanggal">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="skala">Skala Prioritas Keamanan (1-10)</label>
+                        <input type="range" id="skala" name="skala" min="1" max="10">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="warna_brand">Kode Warna Utama Brand (Hex)</label>
+                        <input type="color" id="warna_brand" name="warna_brand" style="height: 50px; padding: 5px;">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="file_brief">Upload Dokumen Persyaratan (PDF)</label>
+                        <input type="file" id="file_brief" name="file_brief" style="background: transparent; border: none; padding: 0;">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="deskripsi">Deskripsi Masalah yang Ingin Diselesaikan</label>
+                        <textarea id="deskripsi" name="deskripsi" rows="4" placeholder="Ceritakan secara detail..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Kirim Permintaan Proyek</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

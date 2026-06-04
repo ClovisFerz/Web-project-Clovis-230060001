@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Klien Baru - Clovis AI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-layout">
+
+    <div class="auth-card">
+        <div class="brand" style="justify-content: center;">🚀 Clovis<span>AI</span></div>
+        <h2>Buat Akun Klien</h2>
+        
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap PIC</label>
+                <input type="text" id="nama" name="nama" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Perusahaan</label>
+                <input type="email" id="email" name="email" placeholder="nama@perusahaan.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Kata Sandi Baru</label>
+                <input type="password" id="password" name="password" placeholder="Minimal 8 karakter" required>
+            </div>
+
+            <div class="form-group">
+                <label for="industri">Sektor Industri</label>
+                <select id="industri" name="industri" required>
+                    <option value="" disabled selected>Pilih Sektor...</option>
+                    <option value="agrikultur">Agrikultur & Pangan</option>
+                    <option value="keuangan">Keuangan & Perbankan</option>
+                    <option value="retail">Retail & E-commerce</option>
+                    <option value="kesehatan">Kesehatan</option>
+                    <option value="teknologi">Teknologi & Informasi</option>
+                </select>
+            </div>
+
+            <div class="form-group" style="display: flex; gap: 10px; align-items: start; margin-top: 15px;">
+                <input type="checkbox" id="toc" name="toc" required style="margin-top: 4px;">
+                <label for="toc" style="font-weight: normal; font-size: 0.85rem; color: #4b5563;">
+                    Saya menyetujui Syarat & Ketentuan serta Kebijakan Privasi yang berlaku terkait pengelolaan data perusahaan.
+                </label>
+            </div>
+            
+            <button type="submit" class="btn-primary">Daftar Sekarang</button>
+        </form>
+
+        <p style="text-align: center; margin-top: 20px; font-size: 0.9rem; color: #6b7280;">
+            Sudah memiliki akun klien? <a href="login.html" style="color: #2563eb; text-decoration: none; font-weight: 500;">Log In di sini</a>
+        </p>
+    </div>
+
+</body>
+</html>

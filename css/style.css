@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f3f4f6; /* Warna latar abu-abu terang modern */
+    color: #1f2937;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* =========================================
+   SIDEBAR KIRI (APP-STYLE NAVIGATION)
+========================================= */
+aside {
+    width: 260px;
+    background: #ffffff;
+    border-right: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    position: fixed; /* Sidebar diam di tempat */
+    height: 100vh;
+    padding: 24px;
+    z-index: 50;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.02);
+}
+
+.brand {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 40px;
+    letter-spacing: -0.5px;
+}
+
+.brand span { color: #2563eb; }
+
+aside nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+aside nav a {
+    text-decoration: none;
+    color: #4b5563;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+aside nav a:hover, aside nav a.active {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+/* =========================================
+   KONTEN UTAMA (KANAN)
+========================================= */
+.main-wrapper {
+    flex: 1;
+    margin-left: 260px; /* Menyisakan ruang untuk sidebar kiri */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 40;
+}
+
+.header-title { font-weight: 600; color: #374151; }
+
+.header-actions a.btn-login {
+    text-decoration: none; font-weight: 600; color: #4b5563; margin-right: 20px;
+}
+.header-actions a.btn-register {
+    background: #111827; color: #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: 0.3s;
+}
+.header-actions a.btn-register:hover { background: #374151; }
+
+main {
+    padding: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* =========================================
+   KARTU (CARDS) & UI ELEMENTS
+========================================= */
+.hero-card {
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    color: #fff;
+    border-radius: 16px;
+    padding: 50px 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
+}
+
+.hero-card h2 { font-size: 2.2rem; margin-bottom: 15px; font-weight: 700; }
+.hero-card p { font-size: 1.1rem; opacity: 0.9; max-width: 600px; line-height: 1.6; }
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.03);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px -5px rgba(0,0,0,0.1);
+}
+
+.card h3 { color: #111827; margin-bottom: 12px; font-size: 1.1rem; }
+.card p { color: #6b7280; font-size: 0.95rem; line-height: 1.5; }
+
+/* =========================================
+   FORM PROFESIONAL
+========================================= */
+.form-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.03);
+    max-width: 700px;
+}
+
+.form-group { margin-bottom: 20px; }
+
+.form-group label {
+    display: block; margin-bottom: 8px; font-weight: 500; color: #374151; font-size: 0.95rem;
+}
+
+.form-group input[type="text"], .form-group input[type="email"], .form-group input[type="password"],
+.form-group input[type="number"], .form-group input[type="date"],
+.form-group select, .form-group textarea, .form-group input[type="file"] {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #111827;
+    background: #f9fafb;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: #2563eb;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15); /* Efek glow profesional saat mengetik */
+}
+
+.radio-group input { margin-right: 8px; cursor: pointer; }
+.radio-group label { display: inline-block; margin-right: 20px; font-weight: normal; cursor: pointer; }
+
+.btn-primary {
+    background: #2563eb; color: #fff; border: none; padding: 14px 24px; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: 0.3s; width: 100%; margin-top: 10px;
+}
+.btn-primary:hover { background: #1d4ed8; }
+
+/* =========================================
+   AUTH PAGES (LOGIN/REGISTER) CENTERED
+========================================= */
+.auth-layout {
+    margin-left: 0; /* Hapus margin sidebar untuk halaman login */
+    align-items: center;
+    justify-content: center;
+    background: #f3f4f6;
+}
+
+.auth-card {
+    background: #fff; width: 100%; max-width: 400px; padding: 40px; border-radius: 16px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+}
+.auth-card h2 { text-align: center; margin-bottom: 30px; font-size: 1.5rem; color: #111827; }
+
+.hero-card {
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.85) 0%, rgba(37, 99, 235, 0.85) 100%), url('../img/hero-ai.jpg') center/cover;
+}
+
+.card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #e5e7eb;
+}
